@@ -348,9 +348,13 @@ def gameMenu():
                 if event.key == pygame.K_DOWN or event.key == pygame.K_s:
                     if b != 2:
                          b += 1
+                    else:
+                        b = 0
                 if event.key == pygame.K_UP or event.key == pygame.K_w:
                     if b != 0:
                         b -= 1
+                    else:
+                        b = 2
                 if event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE:
                     menu = False
                     if b == 0:
@@ -386,9 +390,13 @@ def levelChoose():
                 if event.key == pygame.K_DOWN or event.key == pygame.K_s:
                     if b != 2:
                          b += 1
+                    else:
+                        b = 0
                 if event.key == pygame.K_UP or event.key == pygame.K_w:
                     if b != 0:
                         b -= 1
+                    else:
+                        b = 2
                 if event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE:
                     levelChoose = False
                     if b == 0:
@@ -423,9 +431,13 @@ def mapChoose(difficulty='normal'):
                 if event.key == pygame.K_DOWN or event.key == pygame.K_s:
                     if b != 5:
                          b += 1
+                    else:
+                        b = 0
                 if event.key == pygame.K_UP or event.key == pygame.K_w:
                     if b != 0:
                         b -= 1
+                    else:
+                        b = 5
                 if event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE:
                     mapChoose = False
                     if b == 0:
